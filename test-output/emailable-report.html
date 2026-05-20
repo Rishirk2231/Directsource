@@ -8,34 +8,106 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">AllTests</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">141,160</td><td></td><td></td></tr>
+<tr><th colspan="8">ParallelSuite</th></tr>
+<tr><td><a href="#t0">RealMobileTest</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,389</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">EmulatorTest</a></td><td class="num">1</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">65,423</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num attn">5</th><th class="num">0</th><th class="num attn">2</th><th class="num">89,812</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AllTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Test.checkouttest</td><td><a href="#m0">checktest</a></td><td rowspan="1">1775058440265</td><td rowspan="1">53169</td></tr><tr><th colspan="4">AllTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Test.logintest</td><td><a href="#m1">addcategory</a></td><td rowspan="1">1775058395292</td><td rowspan="1">43858</td></tr><tr class="passedeven"><td><a href="#m2">loginTest</a></td><td rowspan="1">1775058352320</td><td rowspan="1">25591</td></tr><tr class="passedeven"><td><a href="#m3">profile</a></td><td rowspan="1">1775058377921</td><td rowspan="1">17368</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ParallelSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RealMobileTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Test.logintest</td><td><a href="#m0">loginTest</a></td><td rowspan="1">1779274660212</td><td rowspan="1">12645</td></tr><tr><th colspan="4">RealMobileTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Test.checkouttest</td><td><a href="#m1">checktest</a></td><td rowspan="1">1779274675052</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="2">Test.logintest</td><td><a href="#m2">addcategory</a></td><td rowspan="1">1779274675024</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m3">profile</a></td><td rowspan="1">1779274675013</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">EmulatorTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Test.logintest</td><td><a href="#m4">profile</a></td><td rowspan="1">1779274708036</td><td rowspan="1">5996</td></tr><tr><th colspan="4">EmulatorTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Test.checkouttest</td><td><a href="#m5">checktest</a></td><td rowspan="1">1779274716137</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">Test.logintest</td><td><a href="#m6">addcategory</a></td><td rowspan="1">1779274716134</td><td rowspan="1">0</td></tr><tr><th colspan="4">EmulatorTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Test.logintest</td><td><a href="#m7">loginTest</a></td><td rowspan="1">1779274664217</td><td rowspan="1">25788</td></tr></tbody>
 </table>
-<h2>AllTests</h2><h3 id="m0">Test.checkouttest#checktest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>4.24242424242E11</td><td>0.1411764705882353</td><td>541.0</td><td>897915.0</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.InvalidElementStateException: Cannot set the element to &apos;4.24242424242E11&apos;. Did you interact with the correct element?
+<h2>RealMobileTest</h2><h3 id="m0">Test.logintest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [d7a738cc-7955-43fc-8132-f2e32f0f24c1, sendKeysToElement {id=00000000-0000-39cf-0000-001c00001d18, value=[Ljava.lang.CharSequence;@507d64aa}]
-Capabilities {appium:appActivity: com.codezilla.direct_source..., appium:appPackage: com.codezilla.direct_source..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.codezilla.direct_source..., appPackage: com.codezilla.direct_source..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 118, appium:takesScreenshot: true, appium:viewportRect: {height: 2282, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (d7a738cc-7955-43fc-8132-f2e32f0f24c1)] -&gt; xpath: (//android.widget.EditText)[1]]
-Session ID: d7a738cc-7955-43fc-8132-f2e32f0f24c1
+Command: [762c8940-f964-47bb-8b44-9ecd06c0ef91, findElement {value=com.codezilla.direct_source_app:id/user_profile_img, using=id}]
+Capabilities {appium:appActivity: com.codezilla.direct_source..., appium:appPackage: com.codezilla.direct_source..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.codezilla.direct_source..., appPackage: com.codezilla.direct_source..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Redmi note 12 pro, ignoreHiddenApiPolicyError: true, platformName: ANDROID, systemPort: 8202, udid: v4kbnzf6w8hynfaa}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 22101316I, appium:deviceName: v4kbnzf6w8hynfaa, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: v4kbnzf6w8hynfaa, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 94, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: v4kbnzf6w8hynfaa, appium:viewportRect: {height: 2306, left: 0, top: 94, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 762c8940-f964-47bb-8b44-9ecd06c0ef91
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at Utilities.common.sendKeys(common.java:113)
-	at pages.addresspage.enterCardDetails(addresspage.java:228)
-	at Test.checkouttest.checktest(checkouttest.java:27)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at Utilities.common.gotoprofile(common.java:85)
+	at pages.loginpage.gotoprofile1(loginpage.java:62)
+	at Test.logintest.loginTest(logintest.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Test.logintest#addcategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Test.logintest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Test.logintest#profile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Test.checkouttest#checktest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method checkouttest.checktest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.checkouttest@5552768b] depends on not successfully finished methods in group &quot;loginFlow&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Test.logintest#addcategory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Test.logintest.addcategory() on instance Test.logintest@671a5887 depends on not successfully finished methods 
+[Test.logintest.profile() on instance Test.logintest@671a5887]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Test.logintest#profile</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Test.logintest.profile() on instance Test.logintest@671a5887 depends on not successfully finished methods 
+[Test.logintest.loginTest() on instance Test.logintest@671a5887]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>EmulatorTest</h2><h3 id="m4">Test.logintest#profile</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [81a84f5d-adb9-4500-81fd-1f285251dbd9, findElement {value=com.codezilla.direct_source_app:id/edit_profile, using=id}]
+Capabilities {appium:appActivity: com.codezilla.direct_source..., appium:appPackage: com.codezilla.direct_source..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.codezilla.direct_source..., appPackage: com.codezilla.direct_source..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, systemPort: 8201, udid: emulator-5554}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 118, appium:systemPort: 8201, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2282, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 81a84f5d-adb9-4500-81fd-1f285251dbd9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at Utilities.common.editprofile(common.java:100)
+	at pages.loginpage.edit(loginpage.java:67)
+	at Test.logintest.profile(logintest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Test.checkouttest#checktest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method checkouttest.checktest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.checkouttest@37271612] depends on not successfully finished methods in group &quot;loginFlow&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Test.logintest#addcategory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Test.logintest.addcategory() on instance Test.logintest@7dc0f706 depends on not successfully finished methods 
+[Test.logintest.profile() on instance Test.logintest@7dc0f706]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Test.logintest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

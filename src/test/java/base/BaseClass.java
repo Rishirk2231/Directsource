@@ -3,8 +3,9 @@ package base;
 import java.net.MalformedURLException;
 import java.net.URL;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -14,63 +15,77 @@ import pages.addresspage;
 import pages.loginpage;
 
 public class BaseClass {
-	
-	public static AndroidDriver driver;
-	public static common cm;
-    public static loginpage lp;
-    public static addresspage ap;
+
+	public static ThreadLocal<AndroidDriver> driver = new ThreadLocal<>();
+	public AndroidDriver getDriver() {
+	    return driver.get();
+	}
+    public common cm;
+    public loginpage lp;
+    public addresspage ap;
     public static ExtentReports extent;
     public static ExtentTest test;
-	
-	
-	@BeforeSuite
-	public void setup() throws MalformedURLException {
-		
-		ExtentSparkReporter spark = new ExtentSparkReporter("reports/extent.html");
+
+    
+    
+    @BeforeMethod
+    @Parameters("device")
+    public void setup(String device) throws MalformedURLException {
+
+        // Extent Report
+        ExtentSparkReporter spark = new ExtentSparkReporter("reports/extent.html");
         spark.config().setReportName("Automation Report");
         spark.config().setDocumentTitle("Test Results");
-
         extent = new ExtentReports();
         extent.attachReporter(spark);
-		
-		
-		DesiredCapabilities caps = new DesiredCapabilities();
-
-        // Basic Configuration
+        
+        DesiredCapabilities caps = new DesiredCapabilities();       
+        
+        // COMMON CAPS
         caps.setCapability("platformName", "Android");
-        caps.setCapability("appium:deviceName", "emulator-5554");
         caps.setCapability("appium:automationName", "UiAutomator2");
-
-        // App Details
-        caps.setCapability("appium:appPackage", "com.codezilla.direct_source_app");
-        caps.setCapability("appium:appActivity", "com.codezilla.direct_source_app.SplashScreen");
-
-        // Additional Settings
-       // caps.setCapability("appium:noReset", true);
-        //caps.setCapability("fullReset", false);
+        caps.setCapability("appium:appPackage","com.codezilla.direct_source_app");
+        caps.setCapability("appium:appActivity","com.codezilla.direct_source_app.SplashScreen");
         caps.setCapability("appium:autoGrantPermissions", true);
-       // caps.setCapability("newCommandTimeout", 300);
+              
+        // =========================
+        // EMULATOR
+        // =========================
 
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), caps);
+        if(device.equalsIgnoreCase("emulator")) {
 
-        cm = new common(driver);
-        lp = new loginpage(driver, cm);
-        ap = new addresspage(driver, cm);
-	}
-	
-	
-	
-	
-	@AfterSuite
-	public void teardown()
+            caps.setCapability("appium:deviceName","emulator-5554");
+            caps.setCapability("appium:udid", "emulator-5554");
+            caps.setCapability("appium:systemPort", 8201);
+            driver.set(new AndroidDriver(new URL("http://127.0.0.1:4723"), caps));
+        }
+        
+        // =========================
+        // REAL DEVICE
+        // =========================
 
-	{
-		
-		if(driver!=null) {	
-		extent.flush();
-		driver.quit();
-			
-		}
-		
-	}
+        else if(device.equalsIgnoreCase("mobile")) {
+
+            caps.setCapability("appium:deviceName", "Redmi note 12 pro");
+            caps.setCapability("appium:udid","v4kbnzf6w8hynfaa");
+            caps.setCapability("appium:systemPort", 8202);
+            caps.setCapability("appium:ignoreHiddenApiPolicyError", true);
+            driver.set(new AndroidDriver(new URL("http://127.0.0.1:4725"), caps));
+        }   
+        
+        // PAGE OBJECTS
+        cm = new common(getDriver());
+        lp = new loginpage(getDriver(), cm);
+        ap = new addresspage(getDriver(), cm);
+
+    }
+  
+    @AfterMethod
+    public void teardown() {
+
+        if(getDriver() != null) {
+            getDriver().quit();
+        }
+        extent.flush();
+    }
 }

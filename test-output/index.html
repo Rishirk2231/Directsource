@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+            <a href="#" panel-name="suite-ParallelSuite" class="navigator-link">
+              <span class="suite-name border-failed">ParallelSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                  <a href="#" panel-name="test-xml-ParallelSuite" class="navigator-link ">
                     <span>C:\Users\DELL\eclipse-workspace\ds_new\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-ParallelSuite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                  <a href="#" panel-name="group-ParallelSuite" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                  <a href="#" panel-name="times-ParallelSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-ParallelSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-ParallelSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-ParallelSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,45 +92,74 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">8 methods, 2 failed,  5 skipped,  1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
                     <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-ParallelSuite" class="hide-methods failed suite-ParallelSuite"> (hide)</a> <!-- hide-methods failed suite-ParallelSuite -->
+                      <a href="#" panel-name="suite-ParallelSuite" class="show-methods failed suite-ParallelSuite"> (show)</a> <!-- show-methods failed suite-ParallelSuite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content failed suite-ParallelSuite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.checkouttest" class="method navigator-link" hash-for-method="checktest(4.24242424242E11, 0.1411764705882353, 541.0, 897915.0)">checktest(4.24242424242E11, 0.1411764705882353, 541.0, 897915.0)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ParallelSuite" title="Test.logintest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelSuite" title="Test.logintest" class="method navigator-link" hash-for-method="profile">profile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ParallelSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-ParallelSuite" class="hide-methods skipped suite-ParallelSuite"> (hide)</a> <!-- hide-methods skipped suite-ParallelSuite -->
+                      <a href="#" panel-name="suite-ParallelSuite" class="show-methods skipped suite-ParallelSuite"> (show)</a> <!-- show-methods skipped suite-ParallelSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-ParallelSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelSuite" title="Test.logintest" class="method navigator-link" hash-for-method="addcategory">addcategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelSuite" title="Test.logintest" class="method navigator-link" hash-for-method="addcategory">addcategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelSuite" title="Test.checkouttest" class="method navigator-link" hash-for-method="checktest">checktest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelSuite" title="Test.checkouttest" class="method navigator-link" hash-for-method="checktest">checktest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelSuite" title="Test.logintest" class="method navigator-link" hash-for-method="profile">profile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-ParallelSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-ParallelSuite" class="hide-methods passed suite-ParallelSuite"> (hide)</a> <!-- hide-methods passed suite-ParallelSuite -->
+                      <a href="#" panel-name="suite-ParallelSuite" class="show-methods passed suite-ParallelSuite"> (show)</a> <!-- show-methods passed suite-ParallelSuite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content passed suite-ParallelSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.logintest" class="method navigator-link" hash-for-method="addcategory">addcategory</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ParallelSuite" title="Test.logintest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.logintest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.logintest" class="method navigator-link" hash-for-method="profile">profile</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-ParallelSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -141,48 +170,126 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+        <div panel-name="suite-ParallelSuite" class="panel ParallelSuite">
+          <div class="suite-ParallelSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Test.checkouttest</span>
+              <span class="class-name">Test.logintest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checktest(4.24242424242E11, 0.1411764705882353, 541.0, 897915.0)">
-                  </a> <!-- checktest(4.24242424242E11, 0.1411764705882353, 541.0, 897915.0) -->
-                  <span class="method-name">checktest</span>
-                  <span class="parameters">(4.24242424242E11,0.1411764705882353,541.0,897915.0)</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: Cannot set the element to &apos;4.24242424242E11&apos;. Did you interact with the correct element?
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [d7a738cc-7955-43fc-8132-f2e32f0f24c1, sendKeysToElement {id=00000000-0000-39cf-0000-001c00001d18, value=[Ljava.lang.CharSequence;@507d64aa}]
-Capabilities {appium:appActivity: com.codezilla.direct_source..., appium:appPackage: com.codezilla.direct_source..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.codezilla.direct_source..., appPackage: com.codezilla.direct_source..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 118, appium:takesScreenshot: true, appium:viewportRect: {height: 2282, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (d7a738cc-7955-43fc-8132-f2e32f0f24c1)] -&gt; xpath: (//android.widget.EditText)[1]]
-Session ID: d7a738cc-7955-43fc-8132-f2e32f0f24c1
+Command: [762c8940-f964-47bb-8b44-9ecd06c0ef91, findElement {value=com.codezilla.direct_source_app:id/user_profile_img, using=id}]
+Capabilities {appium:appActivity: com.codezilla.direct_source..., appium:appPackage: com.codezilla.direct_source..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.codezilla.direct_source..., appPackage: com.codezilla.direct_source..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Redmi note 12 pro, ignoreHiddenApiPolicyError: true, platformName: ANDROID, systemPort: 8202, udid: v4kbnzf6w8hynfaa}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 22101316I, appium:deviceName: v4kbnzf6w8hynfaa, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: v4kbnzf6w8hynfaa, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 94, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: v4kbnzf6w8hynfaa, appium:viewportRect: {height: 2306, left: 0, top: 94, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 762c8940-f964-47bb-8b44-9ecd06c0ef91
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at Utilities.common.sendKeys(common.java:113)
-	at pages.addresspage.enterCardDetails(addresspage.java:228)
-	at Test.checkouttest.checktest(checkouttest.java:27)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at Utilities.common.gotoprofile(common.java:85)
+	at pages.loginpage.gotoprofile1(loginpage.java:62)
+	at Test.logintest.loginTest(logintest.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="profile">
+                  </a> <!-- profile -->
+                  <span class="method-name">profile</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [81a84f5d-adb9-4500-81fd-1f285251dbd9, findElement {value=com.codezilla.direct_source_app:id/edit_profile, using=id}]
+Capabilities {appium:appActivity: com.codezilla.direct_source..., appium:appPackage: com.codezilla.direct_source..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.codezilla.direct_source..., appPackage: com.codezilla.direct_source..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, systemPort: 8201, udid: emulator-5554}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 118, appium:systemPort: 8201, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2282, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 81a84f5d-adb9-4500-81fd-1f285251dbd9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at Utilities.common.editprofile(common.java:100)
+	at pages.loginpage.edit(loginpage.java:67)
+	at Test.logintest.profile(logintest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 22 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-ParallelSuite-class-failed -->
+          <div class="suite-ParallelSuite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
+              <span class="class-name">Test.checkouttest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checktest">
+                  </a> <!-- checktest -->
+                  <span class="method-name">checktest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method checkouttest.checktest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.checkouttest@5552768b] depends on not successfully finished methods in group &quot;loginFlow&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checktest">
+                  </a> <!-- checktest -->
+                  <span class="method-name">checktest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method checkouttest.checktest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.checkouttest@37271612] depends on not successfully finished methods in group &quot;loginFlow&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelSuite-class-skipped -->
+          <div class="suite-ParallelSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">Test.logintest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -191,13 +298,31 @@ Session ID: d7a738cc-7955-43fc-8132-f2e32f0f24c1
                   <a name="addcategory">
                   </a> <!-- addcategory -->
                   <span class="method-name">addcategory</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Test.logintest.addcategory() on instance Test.logintest@671a5887 depends on not successfully finished methods 
+[Test.logintest.profile() on instance Test.logintest@671a5887]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
+                  <a name="addcategory">
+                  </a> <!-- addcategory -->
+                  <span class="method-name">addcategory</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Test.logintest.addcategory() on instance Test.logintest@7dc0f706 depends on not successfully finished methods 
+[Test.logintest.profile() on instance Test.logintest@7dc0f706]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -205,12 +330,36 @@ Session ID: d7a738cc-7955-43fc-8132-f2e32f0f24c1
                   <a name="profile">
                   </a> <!-- profile -->
                   <span class="method-name">profile</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Test.logintest.profile() on instance Test.logintest@671a5887 depends on not successfully finished methods 
+[Test.logintest.loginTest() on instance Test.logintest@671a5887]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-        </div> <!-- panel Suite -->
-        <div panel-name="test-xml-Suite" class="panel">
+          </div> <!-- suite-ParallelSuite-class-skipped -->
+          <div class="suite-ParallelSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test.logintest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelSuite-class-passed -->
+        </div> <!-- panel ParallelSuite -->
+        <div panel-name="test-xml-ParallelSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">C:\Users\DELL\eclipse-workspace\ds_new\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -218,32 +367,43 @@ Session ID: d7a738cc-7955-43fc-8132-f2e32f0f24c1
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;AllTests&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;ParallelSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;EmulatorTest&quot;&gt;
+    &lt;parameter name=&quot;device&quot; value=&quot;emulator&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Test.logintest&quot;/&gt;
       &lt;class name=&quot;Test.checkouttest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- AllTests --&gt;
-&lt;/suite&gt; &lt;!-- Suite --&gt;
+  &lt;/test&gt; &lt;!-- EmulatorTest --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;RealMobileTest&quot;&gt;
+    &lt;parameter name=&quot;device&quot; value=&quot;mobile&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Test.logintest&quot;/&gt;
+      &lt;class name=&quot;Test.checkouttest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- RealMobileTest --&gt;
+&lt;/suite&gt; &lt;!-- ParallelSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Suite" class="panel">
+        <div panel-name="testlist-ParallelSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suite</span>
+            <span class="header-content">Tests for ParallelSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">AllTests (2 classes)</span>
+                <span class="test-name">EmulatorTest (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">RealMobileTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Suite" class="panel">
+        <div panel-name="group-ParallelSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suite</span>
+            <span class="header-content">Groups for ParallelSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -264,109 +424,124 @@ Session ID: d7a738cc-7955-43fc-8132-f2e32f0f24c1
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Suite" class="panel">
+        <div panel-name="times-ParallelSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suite</span>
+            <span class="header-content">Times for ParallelSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suite');
-function tableData_Suite() {
+suiteTableInitFunctions.push('tableData_ParallelSuite');
+function tableData_ParallelSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checktest')
-data.setCell(0, 2, 'Test.checkouttest')
-data.setCell(0, 3, 53169);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'Test.logintest')
+data.setCell(0, 3, 25788);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addcategory')
+data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'Test.logintest')
-data.setCell(1, 3, 43858);
+data.setCell(1, 3, 12645);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginTest')
+data.setCell(2, 1, 'profile')
 data.setCell(2, 2, 'Test.logintest')
-data.setCell(2, 3, 25591);
+data.setCell(2, 3, 5996);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'profile')
-data.setCell(3, 2, 'Test.logintest')
-data.setCell(3, 3, 17368);
-window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+data.setCell(3, 1, 'checktest')
+data.setCell(3, 2, 'Test.checkouttest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addcategory')
+data.setCell(4, 2, 'Test.logintest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'profile')
+data.setCell(5, 2, 'Test.logintest')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'addcategory')
+data.setCell(6, 2, 'Test.logintest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checktest')
+data.setCell(7, 2, 'Test.checkouttest')
+data.setCell(7, 3, 0);
+window.suiteTableData['ParallelSuite']= { tableData: data, tableDiv: 'times-div-ParallelSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
-              <div id="times-div-Suite">
-              </div> <!-- times-div-Suite -->
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-ParallelSuite">
+              </div> <!-- times-div-ParallelSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suite" class="panel">
+        <div panel-name="reporter-ParallelSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suite</span>
+            <span class="header-content">Reporter output for ParallelSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suite" class="panel">
+        <div panel-name="ignored-methods-ParallelSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Test.checkouttest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">teardown</span>
-                <br/>
-                <span class="ignored-method-name">setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Suite" class="panel">
+        <div panel-name="chronological-ParallelSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">Test.logintest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">setup</span>
+              <div class="configuration-method before">
+                <span class="method-name">setup(emulator)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">15306 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">profile</span>
-                <span class="method-start">40907 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addcategory</span>
-                <span class="method-start">58278 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.checkouttest</div> <!-- chronological-class-name -->
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(mobile)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">checktest(4.24242424242E11, 0.1411764705882353, 541.0, 897915.0)</span>
-                <span class="method-start">103251 ms</span>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">9421 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.logintest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite after">
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">13426 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">156486 ms</span>
-              </div> <!-- configuration-suite after -->
+                <span class="method-start">22126 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">39215 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(emulator)</span>
+                <span class="method-start">40993 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">profile</span>
+                <span class="method-start">57245 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">63249 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

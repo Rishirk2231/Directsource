@@ -17,7 +17,9 @@ import base.BaseClass;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 
-public class common extends BaseClass{
+public class common{
+	
+	public AndroidDriver driver;
 	
 	 public common(AppiumDriver driver) {
 	        this.driver = (AndroidDriver) driver;

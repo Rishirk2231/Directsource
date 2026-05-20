@@ -1,12 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	
-   <test name="AllTests">
-    <classes>
-      <class name="Test.logintest"/>
-      <class name="Test.checkouttest"/>
-    </classes>
-  </test>
-  
-</suite> <!-- Suite -->
+
+<suite name="ParallelSuite" parallel="tests" thread-count="2">  
+	 
+    <!-- Emulator -->
+
+    <test name="EmulatorTest">
+        <parameter name="device" value="emulator"/>
+        <classes>
+            <class name="Test.logintest"/>
+            <class name="Test.checkouttest"/>
+        </classes>
+    </test>
+
+    <!-- Real Device -->
+
+    <test name="RealMobileTest">
+        <parameter name="device" value="mobile"/>
+        <classes>
+            <class name="Test.logintest"/>
+            <class name="Test.checkouttest"/>
+        </classes>
+    </test>
+
+</suite>

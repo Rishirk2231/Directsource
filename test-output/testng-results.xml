@@ -1,82 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="1" failed="2" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-01T21:15:52 IST" name="Suite" finished-at="2026-04-01T21:18:13 IST" duration-ms="141160">
+  <suite started-at="2026-05-20T16:27:30 IST" name="ParallelSuite" finished-at="2026-05-20T16:28:36 IST" duration-ms="65423">
     <groups>
       <group name="loginFlow">
-        <method signature="logintest.loginTest()[pri:-2, instance:Test.logintest@561b6512]" name="loginTest" class="Test.logintest"/>
-        <method signature="logintest.profile()[pri:-1, instance:Test.logintest@561b6512]" name="profile" class="Test.logintest"/>
-        <method signature="logintest.addcategory()[pri:0, instance:Test.logintest@561b6512]" name="addcategory" class="Test.logintest"/>
+        <method signature="logintest.loginTest()[pri:-2, instance:Test.logintest@7dc0f706]" name="loginTest" class="Test.logintest"/>
+        <method signature="logintest.profile()[pri:-1, instance:Test.logintest@7dc0f706]" name="profile" class="Test.logintest"/>
+        <method signature="logintest.addcategory()[pri:0, instance:Test.logintest@7dc0f706]" name="addcategory" class="Test.logintest"/>
+        <method signature="logintest.loginTest()[pri:-2, instance:Test.logintest@671a5887]" name="loginTest" class="Test.logintest"/>
+        <method signature="logintest.profile()[pri:-1, instance:Test.logintest@671a5887]" name="profile" class="Test.logintest"/>
+        <method signature="logintest.addcategory()[pri:0, instance:Test.logintest@671a5887]" name="addcategory" class="Test.logintest"/>
       </group> <!-- loginFlow -->
     </groups>
-    <test started-at="2026-04-01T21:15:52 IST" name="AllTests" finished-at="2026-04-01T21:18:13 IST" duration-ms="141160">
+    <test started-at="2026-05-20T16:27:30 IST" name="RealMobileTest" finished-at="2026-05-20T16:27:55 IST" duration-ms="24389">
       <class name="Test.logintest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test.logintest@561b6512]" started-at="2026-04-01T21:15:37 IST" name="setup" finished-at="2026-04-01T21:15:52 IST" duration-ms="15259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:-2, instance:Test.logintest@561b6512]" started-at="2026-04-01T21:15:52 IST" name="loginTest" finished-at="2026-04-01T21:16:17 IST" duration-ms="25591" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method signature="profile()[pri:-1, instance:Test.logintest@561b6512]" started-at="2026-04-01T21:16:17 IST" name="profile" finished-at="2026-04-01T21:16:35 IST" depends-on-methods="Test.logintest.loginTest" duration-ms="17368" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- profile -->
-        <test-method signature="addcategory()[pri:0, instance:Test.logintest@561b6512]" started-at="2026-04-01T21:16:35 IST" name="addcategory" finished-at="2026-04-01T21:17:19 IST" depends-on-methods="Test.logintest.profile" duration-ms="43858" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addcategory -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test.logintest@561b6512]" started-at="2026-04-01T21:18:13 IST" name="teardown" finished-at="2026-04-01T21:18:16 IST" duration-ms="3481" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- Test.logintest -->
-      <class name="Test.checkouttest">
-        <test-method signature="checktest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.checkouttest@757277dc]" started-at="2026-04-01T21:17:20 IST" name="checktest" data-provider="paymentData" depends-on-groups="loginFlow" finished-at="2026-04-01T21:18:13 IST" duration-ms="53169" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Test.logintest@671a5887]" started-at="2026-05-20T16:27:30 IST" name="setup" finished-at="2026-05-20T16:27:40 IST" duration-ms="9420" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[4.24242424242E11]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0.1411764705882353]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[541.0]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[897915.0]]>
+                <![CDATA[mobile]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.InvalidElementStateException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:-2, instance:Test.logintest@671a5887]" started-at="2026-05-20T16:27:40 IST" name="loginTest" finished-at="2026-05-20T16:27:52 IST" duration-ms="12645" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot set the element to '4.24242424242E11'. Did you interact with the correct element?
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [d7a738cc-7955-43fc-8132-f2e32f0f24c1, sendKeysToElement {id=00000000-0000-39cf-0000-001c00001d18, value=[Ljava.lang.CharSequence;@507d64aa}]
-Capabilities {appium:appActivity: com.codezilla.direct_source..., appium:appPackage: com.codezilla.direct_source..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.codezilla.direct_source..., appPackage: com.codezilla.direct_source..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 118, appium:takesScreenshot: true, appium:viewportRect: {height: 2282, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (d7a738cc-7955-43fc-8132-f2e32f0f24c1)] -> xpath: (//android.widget.EditText)[1]]
-Session ID: d7a738cc-7955-43fc-8132-f2e32f0f24c1]]>
+Command: [762c8940-f964-47bb-8b44-9ecd06c0ef91, findElement {value=com.codezilla.direct_source_app:id/user_profile_img, using=id}]
+Capabilities {appium:appActivity: com.codezilla.direct_source..., appium:appPackage: com.codezilla.direct_source..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.codezilla.direct_source..., appPackage: com.codezilla.direct_source..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Redmi note 12 pro, ignoreHiddenApiPolicyError: true, platformName: ANDROID, systemPort: 8202, udid: v4kbnzf6w8hynfaa}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 22101316I, appium:deviceName: v4kbnzf6w8hynfaa, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: v4kbnzf6w8hynfaa, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 94, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: v4kbnzf6w8hynfaa, appium:viewportRect: {height: 2306, left: 0, top: 94, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 762c8940-f964-47bb-8b44-9ecd06c0ef91]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidElementStateException: Cannot set the element to '4.24242424242E11'. Did you interact with the correct element?
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [d7a738cc-7955-43fc-8132-f2e32f0f24c1, sendKeysToElement {id=00000000-0000-39cf-0000-001c00001d18, value=[Ljava.lang.CharSequence;@507d64aa}]
-Capabilities {appium:appActivity: com.codezilla.direct_source..., appium:appPackage: com.codezilla.direct_source..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.codezilla.direct_source..., appPackage: com.codezilla.direct_source..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 118, appium:takesScreenshot: true, appium:viewportRect: {height: 2282, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (d7a738cc-7955-43fc-8132-f2e32f0f24c1)] -> xpath: (//android.widget.EditText)[1]]
-Session ID: d7a738cc-7955-43fc-8132-f2e32f0f24c1
+Command: [762c8940-f964-47bb-8b44-9ecd06c0ef91, findElement {value=com.codezilla.direct_source_app:id/user_profile_img, using=id}]
+Capabilities {appium:appActivity: com.codezilla.direct_source..., appium:appPackage: com.codezilla.direct_source..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.codezilla.direct_source..., appPackage: com.codezilla.direct_source..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: Redmi note 12 pro, ignoreHiddenApiPolicyError: true, platformName: ANDROID, systemPort: 8202, udid: v4kbnzf6w8hynfaa}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 22101316I, appium:deviceName: v4kbnzf6w8hynfaa, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: v4kbnzf6w8hynfaa, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 94, appium:systemPort: 8202, appium:takesScreenshot: true, appium:udid: v4kbnzf6w8hynfaa, appium:viewportRect: {height: 2306, left: 0, top: 94, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 762c8940-f964-47bb-8b44-9ecd06c0ef91
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -88,11 +58,13 @@ at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpRespo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-at Utilities.common.sendKeys(common.java:113)
-at pages.addresspage.enterCardDetails(addresspage.java:228)
-at Test.checkouttest.checktest(checkouttest.java:27)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at Utilities.common.gotoprofile(common.java:85)
+at pages.loginpage.gotoprofile1(loginpage.java:62)
+at Test.logintest.loginTest(logintest.java:21)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,25 +81,268 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test.logintest@671a5887]" started-at="2026-05-20T16:27:52 IST" name="teardown" finished-at="2026-05-20T16:27:55 IST" duration-ms="2083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="profile()[pri:-1, instance:Test.logintest@671a5887]" started-at="2026-05-20T16:27:55 IST" name="profile" finished-at="2026-05-20T16:27:55 IST" depends-on-methods="Test.logintest.loginTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test.logintest.profile() on instance Test.logintest@671a5887 depends on not successfully finished methods 
+[Test.logintest.loginTest() on instance Test.logintest@671a5887]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test.logintest.profile() on instance Test.logintest@671a5887 depends on not successfully finished methods 
+[Test.logintest.loginTest() on instance Test.logintest@671a5887]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profile -->
+        <test-method signature="addcategory()[pri:0, instance:Test.logintest@671a5887]" started-at="2026-05-20T16:27:55 IST" name="addcategory" finished-at="2026-05-20T16:27:55 IST" depends-on-methods="Test.logintest.profile" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test.logintest.addcategory() on instance Test.logintest@671a5887 depends on not successfully finished methods 
+[Test.logintest.profile() on instance Test.logintest@671a5887]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test.logintest.addcategory() on instance Test.logintest@671a5887 depends on not successfully finished methods 
+[Test.logintest.profile() on instance Test.logintest@671a5887]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addcategory -->
+      </class> <!-- Test.logintest -->
+      <class name="Test.checkouttest">
+        <test-method signature="checktest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.checkouttest@5552768b]" started-at="2026-05-20T16:27:55 IST" name="checktest" depends-on-groups="loginFlow" finished-at="2026-05-20T16:27:55 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method checkouttest.checktest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.checkouttest@5552768b] depends on not successfully finished methods in group "loginFlow"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method checkouttest.checktest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.checkouttest@5552768b] depends on not successfully finished methods in group "loginFlow"
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checktest -->
       </class> <!-- Test.checkouttest -->
-    </test> <!-- AllTests -->
-  </suite> <!-- Suite -->
+    </test> <!-- RealMobileTest -->
+    <test started-at="2026-05-20T16:27:30 IST" name="EmulatorTest" finished-at="2026-05-20T16:28:36 IST" duration-ms="65423">
+      <class name="Test.logintest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Test.logintest@7dc0f706]" started-at="2026-05-20T16:27:30 IST" name="setup" finished-at="2026-05-20T16:27:44 IST" duration-ms="13426" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emulator]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:-2, instance:Test.logintest@7dc0f706]" started-at="2026-05-20T16:27:44 IST" name="loginTest" finished-at="2026-05-20T16:28:10 IST" duration-ms="25788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test.logintest@7dc0f706]" started-at="2026-05-20T16:28:10 IST" name="teardown" finished-at="2026-05-20T16:28:11 IST" duration-ms="1773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Test.logintest@7dc0f706]" started-at="2026-05-20T16:28:11 IST" name="setup" finished-at="2026-05-20T16:28:28 IST" duration-ms="16252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emulator]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="profile()[pri:-1, instance:Test.logintest@7dc0f706]" started-at="2026-05-20T16:28:28 IST" name="profile" finished-at="2026-05-20T16:28:34 IST" depends-on-methods="Test.logintest.loginTest" duration-ms="5996" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [81a84f5d-adb9-4500-81fd-1f285251dbd9, findElement {value=com.codezilla.direct_source_app:id/edit_profile, using=id}]
+Capabilities {appium:appActivity: com.codezilla.direct_source..., appium:appPackage: com.codezilla.direct_source..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.codezilla.direct_source..., appPackage: com.codezilla.direct_source..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, systemPort: 8201, udid: emulator-5554}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 118, appium:systemPort: 8201, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2282, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 81a84f5d-adb9-4500-81fd-1f285251dbd9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [81a84f5d-adb9-4500-81fd-1f285251dbd9, findElement {value=com.codezilla.direct_source_app:id/edit_profile, using=id}]
+Capabilities {appium:appActivity: com.codezilla.direct_source..., appium:appPackage: com.codezilla.direct_source..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.codezilla.direct_source..., appPackage: com.codezilla.direct_source..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, platformName: ANDROID, systemPort: 8201, udid: emulator-5554}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 118, appium:systemPort: 8201, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2282, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 81a84f5d-adb9-4500-81fd-1f285251dbd9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at Utilities.common.editprofile(common.java:100)
+at pages.loginpage.edit(loginpage.java:67)
+at Test.logintest.profile(logintest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profile -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test.logintest@7dc0f706]" started-at="2026-05-20T16:28:34 IST" name="teardown" finished-at="2026-05-20T16:28:36 IST" duration-ms="2093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="addcategory()[pri:0, instance:Test.logintest@7dc0f706]" started-at="2026-05-20T16:28:36 IST" name="addcategory" finished-at="2026-05-20T16:28:36 IST" depends-on-methods="Test.logintest.profile" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test.logintest.addcategory() on instance Test.logintest@7dc0f706 depends on not successfully finished methods 
+[Test.logintest.profile() on instance Test.logintest@7dc0f706]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test.logintest.addcategory() on instance Test.logintest@7dc0f706 depends on not successfully finished methods 
+[Test.logintest.profile() on instance Test.logintest@7dc0f706]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addcategory -->
+      </class> <!-- Test.logintest -->
+      <class name="Test.checkouttest">
+        <test-method signature="checktest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.checkouttest@37271612]" started-at="2026-05-20T16:28:36 IST" name="checktest" depends-on-groups="loginFlow" finished-at="2026-05-20T16:28:36 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method checkouttest.checktest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.checkouttest@37271612] depends on not successfully finished methods in group "loginFlow"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method checkouttest.checktest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.checkouttest@37271612] depends on not successfully finished methods in group "loginFlow"
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checktest -->
+      </class> <!-- Test.checkouttest -->
+    </test> <!-- EmulatorTest -->
+  </suite> <!-- ParallelSuite -->
 </testng-results>
